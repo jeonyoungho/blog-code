@@ -7,12 +7,12 @@ package org.example.delegate;
 public class Main {
 
     public static void main(String[] args) {
-        TravelPlanner person = new Person2("Alice");
+        Person2 person = new Person2("Alice");
         TravelPlanDelegator travelPlanDelegatorForPerson = new BasicTravelPlanDelegator(person);
-        person.여행계획하기();
+        travelPlanDelegatorForPerson.여행계획하기();
 
-        TravelPlanner travelPlanCompany = new TravelPlanCompany();
+        TravelPlanner travelPlanCompany = new TravelPlanCompany("CompanyA");
         TravelPlanDelegator travelPlanDelegatorForCompany = new BasicTravelPlanDelegator(travelPlanCompany);
-        travelPlanCompany.여행계획하기();
+        travelPlanDelegatorForCompany.여행계획하기();
     }
 }

@@ -5,7 +5,5 @@ package org.example.delegate;
  */
 
 public interface TravelPlanDelegator {
-    void 비행기예약();
-    void 숙소예약();
-    void 차량렌탈();
+    void 여행계획하기();
 }

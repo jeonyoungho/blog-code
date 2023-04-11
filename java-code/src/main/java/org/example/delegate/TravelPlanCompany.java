@@ -6,18 +6,14 @@ package org.example.delegate;
 
 public class TravelPlanCompany implements TravelPlanner {
 
-    private TravelPlanDelegator delegator;
+    private String name;
 
-    @Override
-    public void setDelegator(TravelPlanDelegator delegator) {
-        this.delegator = delegator;
+    public TravelPlanCompany(String name) {
+        this.name = name;
     }
 
     @Override
-    public void 여행계획하기() {
-        System.out.println("[TravelPlanCompany] 여행 계획 시작~!");
-        delegator.비행기예약();
-        delegator.숙소예약();
-        delegator.차량렌탈();
+    public String getName() {
+        return this.name;
     }
 }

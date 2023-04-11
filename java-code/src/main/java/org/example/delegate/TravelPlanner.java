@@ -5,7 +5,5 @@ package org.example.delegate;
  */
 
 public interface TravelPlanner {
-    void 여행계획하기();
-
-    void setDelegator(TravelPlanDelegator delegator);
+    String getName();
 }
